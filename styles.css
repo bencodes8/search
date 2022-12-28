@@ -1,0 +1,21 @@
+.upper-search {
+    background-color: pink;
+    margin: 10px;
+}
+
+.upper-search input[type="text"] {
+    display: block;
+    border-radius: 20px 20px 20px 20px;
+    height: 35px;
+    width: 750px;
+    margin: auto;
+}
+
+.lower-search {
+    margin: 10px;
+    text-align: center;
+}
+
+.lower-search input[type="submit"] {
+    margin: auto;
+}
