@@ -1,14 +1,54 @@
+.navbar {
+    text-align: right;
+    margin: 15px;
+}
+
+.navbar .nav-i {
+    padding: 10px;
+}
+
+#logo {
+    display: block;
+    text-align: center;
+    font-size: 72px;
+    font-weight: bold;
+    height: 100px;
+    width: 450px;
+    margin: auto;
+}
+
+#logo .logo-letter {
+    margin: -7.5px;
+}
+
 .upper-search {
-    background-color: pink;
     margin: 10px;
 }
 
 .upper-search input[type="text"] {
     display: block;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
     border-radius: 20px 20px 20px 20px;
-    height: 35px;
-    width: 750px;
     margin: auto;
+    padding-left: 20px;
+}
+
+@media (min-width: 750px)
+{
+    .upper-search input[type="text"] {
+        height: 35px;
+        width: 600px;
+    }
+    
+}
+
+@media (max-width: 749px)
+{
+    .upper-search input[type="text"] {
+        height: 35px;
+        width: 75%;
+    }
 }
 
 .lower-search {
@@ -17,5 +57,13 @@
 }
 
 .lower-search input[type="submit"] {
-    margin: auto;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding: 10px;
+    margin: 5px;
+}
+
+.lower-search input[type="submit"]:hover, .upper-search input[type="text"]:hover .upper-search input[type="text"]:focus {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
 }
