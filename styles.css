@@ -80,7 +80,7 @@
     margin: 5px;
 }
 
-.lower-search input[type="submit"]:hover, .upper-search input[type="text"], .upper-search input[type="text"]:focus {
+.lower-search input[type="submit"]:hover, .upper-search input[type="text"], .upper-search input[type="text"]:focus, .grid-item input[type="text"]{
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
     outline: none;
     border: 1px solid #dadce0;
@@ -88,5 +88,65 @@
 
 h3 {
     padding: 25px;
+}
+
+h3, #grid {
     border-bottom: 1px solid #dadce0;
+}
+
+#grid {
+    display: grid;
+    padding: 20px;
+    padding-bottom: 40px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-columns: 200px 570px auto;
+    grid-template-rows: 30px 30px 30px 30px 30px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.grid-item input[type="text"] {
+    padding-left: 10px;
+    display: block;
+    width: 570px;
+    height: 28px;   
+}
+
+.a-param {
+    font-size: 13px;
+    color: #222222;
+}
+
+.a-do {
+    font-size: 11px;
+}
+
+.sample {
+    font-size: 11px;
+    font-family: monospace;
+    color: #666666;
+}
+
+.grid-item #a-submit {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.grid-item input[type="submit"] {
+    height: 30px;
+    width: 120px;
+    background-color: #4d90fe;
+    color: white;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+}
+
+.grid-item input[type="submit"]:hover {
+    opacity: 0.95;
 }
