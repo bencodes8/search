@@ -15,8 +15,37 @@
     
     <h3 style="color: #D93025;">Advanced Search</h3>
 
-    <div id="grid">
-        
-    </div>
+    <form action="https://www.google.com/search">
+        <div id="grid">
+
+            <div class="grid-item" style="color:#333333;font-size:16px;">Find pages with...</div>
+            <div class="grid-item"></div>
+            <div class="grid-item" style="color: #777777">To do this in the search box</div>
+            <div class="grid-item a-param">all these words:</div>
+            <div class="grid-item">
+                <input type="text" name="as_q">
+            </div>
+            <div class="grid-item a-do">Type the important words: &nbsp; <span class="sample">tricolor rat terrier</span></div>
+            <div class="grid-item a-param">this exact word or phrase:</div>
+            <div class="grid-item">
+                <input type="text" name="as_epq">
+            </div>
+            <div class="grid-item a-do">Put exact words in quotes: &nbsp; <span class="sample">"rat terrier"</span></div>
+            <div class="grid-item a-param">any of these words:</div>
+            <div class="grid-item">
+                <input type="text" name="as_oq">
+            </div>
+            <div class="grid-item a-do">Type OR between all the words you want: &nbsp; <span class="sample">miniature OR standard</span></div>
+            <div class="grid-item a-param">none of these words:</div>
+            <div class="grid-item">
+                <input type="text" name="as_eq">
+            </div>
+            <div class="grid-item a-do">Put a minus sign just before words you don't want: &nbsp;<span class="sample"> -rodent, - "Jack Russell"</span></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"><div id="a-submit"><input type="submit" value="Advanced Search"></div></div>
+
+        </div>
+    </form>
+
 </body>
 </html>
